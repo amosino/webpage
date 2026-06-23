@@ -7,7 +7,7 @@
 
 🔗 **Enlaces de Interés:**
 * [Sitio Web Académico (Público)](https://amosino.github.io/webpage-2026/)
-* [Google Scholar](https://scholar.google.com/citations?user=dM4O31cAAAAJ)
+* [Google Scholar](https://https://scholar.google.com/citations?user=MKNUvYIAAAAJ&hl=es)
 * [LinkedIn](https://www.linkedin.com/in/alejandro-mosino/)
 * [GitHub](https://github.com/amosino)
 
@@ -49,7 +49,7 @@ Soy Doctor en Economía por la Universidad de Grenoble, Francia. Actualmente me 
   * *SECIHTI, México*
 * **Miembro del Sistema Nacional de Investigadores (SNI), Nivel I** (2019 - 2025)
   * *CONACYT, México*
-* **Perfil Deseable PRODEP** (2018 - 2021)
+* **Perfil Deseable PRODEP** (2012 - 2027)
   * *Secretaría de Educación Pública (SEP), México*
 
 ---
