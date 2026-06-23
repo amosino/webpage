@@ -1,0 +1,13 @@
+# R Project files to ignore
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.Rmarkdown_tmp/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Development Context (Local only)
+contexto_desarrollo.md

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandro Mosiño | Proyectos</title>
+  <meta name="description" content="Proyectos de investigación y consultoría financiada coordinados por Alejandro Mosiño.">
+  <meta name="author" content="Alejandro Mosiño">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <h2 class="logo-text">Alejandro <span>Mosiño</span></h2>
+      </a>
+      
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li><a href="investigacion.html" class="nav-link">Investigación</a></li>
+          <li><a href="libros.html" class="nav-link">Libros</a></li>
+          <li><a href="docencia.html" class="nav-link">Docencia</a></li>
+          <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Proyectos</h1>
+      <p class="tagline">Investigación básica y aplicada con financiamiento público y privado</p>
+    </div>
+  </section>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Filter and Sort Controls -->
+      <section class="filter-controls">
+        <div class="filter-group">
+          <label for="cd-dropdown" class="filter-label"><i class="bi bi-filter"></i> Filtrar por institución:</label>
+          <select id="cd-dropdown" class="filter-select" name="cd-dropdown">
+            <option value="all" selected>Todos</option>
+            <option value="ug">Universidad de Guanajuato</option>
+            <option value="aseg">Auditoría Superior del Estado (ASEG)</option>
+            <option value="sices">SICES Guanajuato</option>
+            <option value="cluster">Clúster / Vinculación</option>
+            <option value="ven">VEN / Instituto de Ecología</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label class="filter-label"><i class="bi bi-sort-down"></i> Ordenar por año:</label>
+          <div class="sort-btn-group">
+            <button class="sort sort-btn active" data-sort="data-year" data-order="desc" title="Más recientes primero">
+              Recientes
+            </button>
+            <button class="sort sort-btn" data-sort="data-year" data-order="asc" title="Más antiguos primero">
+              Antiguos
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects List -->
+      <section class="pitems list-items">
+        
+        <div class="list-item ug" data-year="2025">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2025</span>
+            </div>
+            <h4 class="item-title">Violencia de pareja, educación y empleo: Un análisis comparativo de índices de severidad <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Coralia Quintero Rojas, Artemio Jiménez Rico</div>
+            <div class="item-cite"><i>Universidad de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Desarrollar y validar índices de severidad multidimensionales para medir la intensidad y frecuencia de la violencia de pareja sufrida por mujeres en México, analizando su asociación causal con el empoderamiento educativo y la participación laboral.</p>
+            <p><strong>Metodología:</strong> Estimación de modelos logísticos multinomiales y técnicas de emparejamiento (propensity score matching) utilizando los microdatos de la ENDIREH.</p>
+          </div>
+        </div>
+
+        <div class="list-item ug" data-year="2024">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2024</span>
+            </div>
+            <h4 class="item-title">Violencia contra mujeres en México, asociación con la educación y el empleo <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Coralia Quintero Rojas, Artemio Jiménez Rico</div>
+            <div class="item-cite"><i>Universidad de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Analizar la prevalencia de la violencia de género a nivel nacional y estatal, contrastando hipótesis clásicas de negociación en el hogar vs. teorías de reacción violenta (backlash) frente al estatus laboral de la mujer.</p>
+            <p><strong>Metodología:</strong> Modelos econométricos lineales y de probabilidad limitada con microdatos de encuestas nacionales de hogares.</p>
+          </div>
+        </div>
+
+        <div class="list-item aseg" data-year="2023">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--vinculacion">Proyecto de vinculación</span>
+              </div>
+              <span class="item-year">2023</span>
+            </div>
+            <h4 class="item-title">Encuesta de percepción ciudadana sobre los servicios públicos municipales en el estado de Guanajuato <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Lari A. Viianto, Jeremy Heald</div>
+            <div class="item-cite"><i>Auditoría Superior del Estado de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Evaluar el nivel de satisfacción y calidad percibida por la población guanajuatense respecto a los servicios básicos de agua, luz, recolección de basura, pavimentación y seguridad pública provistos por los 46 ayuntamientos.</p>
+            <p><strong>Productos:</strong> Reporte técnico detallado con índices sintéticos por municipio para retroalimentar las auditorías de desempeño del órgano fiscalizador estatal.</p>
+          </div>
+        </div>
+
+        <div class="list-item ug" data-year="2021">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2021</span>
+            </div>
+            <h4 class="item-title">Combinación óptima de recursos naturales para la generación de energía en México, una comparativa de metodologías <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Supratim Das Gupta, Alejandro Tasuo Moreno Okuno</div>
+            <div class="item-cite"><i>Universidad de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Comparar la eficiencia económica y la viabilidad ambiental de la matriz de generación de energía planeada para México mediante la Teoría de Portafolio de Markowitz y modelos de optimización dinámica.</p>
+            <p><strong>Productos:</strong> Publicaciones en revistas de política energética internacional recomendando el incremento de la participación de energía fotovoltaica.</p>
+          </div>
+        </div>
+
+        <div class="list-item ug" data-year="2020">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2020</span>
+            </div>
+            <h4 class="item-title">Transición energética en México: un análisis de opciones reales <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Supratim Das Gupta, José Antonio Carrillo Viramontes</div>
+            <div class="item-cite"><i>Universidad de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Estudiar el momento óptimo de inversión (timing) en infraestructura de energías limpias por parte de las firmas privadas en México, considerando la volatilidad de precios de combustibles fósiles y la incertidumbre en regulaciones públicas.</p>
+            <p><strong>Metodología:</strong> Modelado matemático estocástico y valuación mediante opciones reales de inversión.</p>
+          </div>
+        </div>
+
+        <div class="list-item ug" data-year="2019">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2019</span>
+            </div>
+            <h4 class="item-title">Automatización, empleo e informalidad <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Bernabé Edgar Cruz González, Antonio Báez Morales, Johanan Zamilpa Paredes</div>
+            <div class="item-cite"><i>Universidad de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Analizar la vulnerabilidad de las ocupaciones laborales en México frente a los procesos globales de automatización y digitalización industrial (Industria 4.0), evaluando su impacto en el tránsito hacia la informalidad.</p>
+            <p><strong>Metodología:</strong> Clasificación y cruce de tareas laborales a nivel microeconómico utilizando taxonomías de probabilidad de automatización adaptadas al caso mexicano.</p>
+          </div>
+        </div>
+
+        <div class="list-item sices" data-year="2018">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2018</span>
+            </div>
+            <h4 class="item-title">Análisis de Bienestar, Pobreza y Desigualdad en Guanajuato. Propuestas de Políticas Públicas <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Claudia S. Gómez López, Antonio Báez Morales</div>
+            <div class="item-cite"><i>Secretaría de Innovación, Ciencia y Educación Superior (Guanajuato)</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Diagnosticar el estado de la pobreza multidimensional y las brechas de desigualdad de ingreso en los municipios del estado de Guanajuato, diseñando recomendaciones viables para programas sociales de transferencias focalizadas.</p>
+            <p><strong>Productos:</strong> Libro colectivo y reportes ejecutivos entregados a las dependencias gubernamentales de desarrollo social del estado.</p>
+          </div>
+        </div>
+
+        <div class="list-item ug" data-year="2017">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2017</span>
+            </div>
+            <h4 class="item-title">El impacto de la industria automotriz en el desarrollo económico de las entidades federativas <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Manuel Gómez, Daniel Ventosa, Luis F. López Ornelas, Eugenio Suárez</div>
+            <div class="item-cite"><i>Universidad de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Medir el derrame económico (spillover effect) provisto por el establecimiento de plantas armadoras y proveedoras Tier 1 y Tier 2 de la industria automotriz sobre los salarios locales y el PIB de los estados mexicanos.</p>
+            <p><strong>Metodología:</strong> Análisis espacial y estimación de modelos econométricos con datos de censos económicos.</p>
+          </div>
+        </div>
+
+        <div class="list-item cluster" data-year="2017">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--vinculacion">Proyecto de vinculación</span>
+              </div>
+              <span class="item-year">2017</span>
+            </div>
+            <h4 class="item-title">Diagnóstico para identificar características socioculturales asociadas a la problemática del hacinamiento (Medina, León y Celaya) <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, J. Refugio Vallejo Gutiérrez, Lari A. Viianto</div>
+            <div class="item-cite"><i>Clúster de Vivienda del Estado de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Investigar los determinantes sociales, culturales y económicos de las familias que viven en hacinamiento en polígonos de alta marginación urbana de León y Celaya para orientar el diseño de vivienda de interés social.</p>
+            <p><strong>Metodología:</strong> Levantamiento de encuestas representativas en campo, entrevistas semi-estructuradas y análisis estadístico inferencial.</p>
+          </div>
+        </div>
+
+        <div class="list-item sices" data-year="2017">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2017</span>
+            </div>
+            <h4 class="item-title">Impacto de la anemia e indicadores de desarrollo social en el desempeño escolar de niños y adolescentes en Guanajuato <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Claudia S. Gómez López</div>
+            <div class="item-cite"><i>Secretaría de Innovación, Ciencia y Educación Superior (Guanajuato)</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Determinar el efecto de la desnutrición clínica (medida a través del índice de anemia por hemoglobina) sobre la atención cognitiva y los puntajes en matemáticas y español de alumnos de primaria y secundaria en Guanajuato.</p>
+            <p><strong>Metodología:</strong> Modelos lineales y logísticos controlando por factores socioeconómicos del hogar y características de la escuela.</p>
+          </div>
+        </div>
+
+        <div class="list-item ven" data-year="2015">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--vinculacion">Proyecto de vinculación</span>
+              </div>
+              <span class="item-year">2015</span>
+            </div>
+            <h4 class="item-title">Programa Estatal para la Reutilización, Reciclaje, Co-Procesamiento y Disposición Final de Neumáticos fuera de uso <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, J. Refugio Vallejo Gutiérrez</div>
+            <div class="item-cite"><i>VEN / Instituto de Ecología del Estado de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Diseñar un programa de economía circular y viabilidad económica para la gestión sustentable de neumáticos en desuso en el estado de Guanajuato, reduciendo riesgos de incendios y epidemias sanitarias.</p>
+            <p><strong>Productos:</strong> Diagnóstico técnico y propuesta de política pública sectorial.</p>
+          </div>
+        </div>
+
+        <div class="list-item ug" data-year="2014">
+          <div class="item-main">
+            <div class="item-header">
+              <div class="item-tags">
+                <span class="item-tag item-tag--project">Proyecto financiado</span>
+              </div>
+              <span class="item-year">2014</span>
+            </div>
+            <h4 class="item-title">Modelización de la tasa de cambio nominal y real: el caso peso dólar <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+            <div class="item-authors"><strong>Alejandro Mosiño</strong>, Manuel Gómez</div>
+            <div class="item-cite"><i>Universidad de Guanajuato</i></div>
+          </div>
+          <div class="item-details">
+            <h5>Descripción del Proyecto</h5>
+            <p><strong>Objetivo:</strong> Comparar el poder explicativo y predictivo de modelos lineales de paridad de poder de compra frente a modelos estocásticos no-lineales avanzados para la tasa de cambio MXN/USD.</p>
+            <p><strong>Metodología:</strong> Ajuste de series temporales y optimización matemática de parámetros en procesos estocásticos de difusión.</p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="investigacion.html">Investigación</a></li>
+        <li><a href="libros.html">Libros</a></li>
+        <li><a href="docencia.html">Docencia</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+      </ul>
+      <p>&copy; <span id="current-year"></span> Alejandro Mosiño. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+</html>

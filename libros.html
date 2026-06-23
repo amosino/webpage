@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandro Mosiño | Libros</title>
+  <meta name="description" content="Libros coordinados y capítulos en libros colectivos académicos publicados por Alejandro Mosiño.">
+  <meta name="author" content="Alejandro Mosiño">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <h2 class="logo-text">Alejandro <span>Mosiño</span></h2>
+      </a>
+      
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li><a href="investigacion.html" class="nav-link">Investigación</a></li>
+          <li><a href="libros.html" class="nav-link">Libros</a></li>
+          <li><a href="docencia.html" class="nav-link">Docencia</a></li>
+          <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li><a href="blog/index.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Libros</h1>
+      <p class="tagline">Libros coordinados y capítulos en libros de texto colectivos académicos</p>
+    </div>
+  </section>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- ============ AUTHOR BOOKS (PLACEHOLDER) ============ -->
+      <!-- Para mostrar esta sección en el futuro, remueve 'display: none;' del atributo style del section -->
+      <section class="author-books-section" style="margin-bottom: 4.5rem; display: none;">
+        <h2>Libros de Autor</h2>
+        <div style="background-color: var(--bg-secondary); border: 1px dashed var(--border-color); border-radius: var(--radius-lg); padding: 3rem 1.5rem; text-align: center; max-width: 800px; margin: 2rem auto 0 auto; box-shadow: var(--shadow-sm);">
+          <div style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1rem;"><i class="bi bi-book"></i></div>
+          <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--text-primary);">Libro de texto en preparación</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0; font-style: italic;">
+            Próximamente disponible en esta sección.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ COORDINATED BOOKS & ACADEMIC CHAPTERS ============ -->
+      <section class="coordinated-books-section">
+        <h2>Libros Coordinados y Capítulos Académicos</h2>
+        
+        <!-- Filter and Sort Controls -->
+        <div class="filter-controls" style="margin-top: 1.5rem;">
+          <div class="filter-group">
+            <label for="cd-dropdown" class="filter-label"><i class="bi bi-filter"></i> Filtrar por tipo:</label>
+            <select id="cd-dropdown" class="filter-select" name="cd-dropdown">
+              <option value="all" selected>Todos</option>
+              <option value="book">Libros coordinados</option>
+              <option value="bookchapter">Capítulos académicos</option>
+            </select>
+          </div>
+          
+          <div class="filter-group">
+            <label class="filter-label"><i class="bi bi-sort-down"></i> Ordenar por año:</label>
+            <div class="sort-btn-group">
+              <button class="sort sort-btn active" data-sort="data-year" data-order="desc" title="Más recientes primero">
+                Recientes
+              </button>
+              <button class="sort sort-btn" data-sort="data-year" data-order="asc" title="Más antiguos primero">
+                Antiguos
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coordinated Books and Chapters List -->
+        <div class="pitems list-items">
+          
+          <!-- ============ 2025 ============ -->
+          <div class="list-item book" data-year="2025">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2025</span>
+              </div>
+              <h4 class="item-title">ABCD’Economía, Tomo VI. Desigualdad en México: un enfoque multidisciplinar <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong>, Quintero Rojas, C. A., Jiménez Rico, A. (Coordinadores)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Secularte A.C.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Libro colectivo que reúne investigaciones sobre las diversas dimensiones (económica, social, regional y de género) de la desigualdad en el México contemporáneo.</p>
+            </div>
+          </div>
+
+          <!-- ============ 2024 ============ -->
+          <div class="list-item book" data-year="2024">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2024</span>
+              </div>
+              <h4 class="item-title">ABCD’Economía, Tomo V. Nuevos Talentos: Estudios Transversales con Perspectiva de Género <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong>, Quintero Rojas, C. A., Osorio-Caballero, M. I. (Coordinadores)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Secularte A.C.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Volumen enfocado en destacar el talento de jóvenes investigadores y tesis meritorias orientadas al análisis de género y equidad en el mercado de trabajo y la educación.</p>
+            </div>
+          </div>
+
+          <!-- ============ 2023 ============ -->
+          <div class="list-item bookchapter" data-year="2023">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2023</span>
+              </div>
+              <h4 class="item-title">Álgebra <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors">Vallejo Gutiérrez, R., <strong>Alejandro Mosiño</strong></div>
+              <div class="item-cite">
+                <span>En <i>ABCD’Economía</i>, 2E. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Capítulo docente sobre fundamentos matemáticos de álgebra lineal, matrices y sistemas de ecuaciones simultáneas aplicadas al análisis de modelos económicos sectoriales.</p>
+            </div>
+          </div>
+
+          <div class="list-item bookchapter" data-year="2023">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2023</span>
+              </div>
+              <h4 class="item-title">Cálculo diferencial <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors">Vallejo Gutiérrez, R., <strong>Alejandro Mosiño</strong></div>
+              <div class="item-cite">
+                <span>En <i>ABCD’Economía</i>, 2E. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Introducción técnica a las derivadas de funciones, reglas de diferenciación y optimización matemática estática con y sin restricciones de igualdad.</p>
+            </div>
+          </div>
+
+          <div class="list-item bookchapter" data-year="2023">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2023</span>
+              </div>
+              <h4 class="item-title">Estadística descriptiva y probabilidad <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong></div>
+              <div class="item-cite">
+                <span>En <i>ABCD’Economía</i>, 2E. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Desarrollo docente sobre medidas de tendencia central, dispersión, momentos estadísticos y teoría fundamental de probabilidad con distribuciones discretas y continuas.</p>
+            </div>
+          </div>
+
+          <div class="list-item bookchapter" data-year="2023">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2023</span>
+              </div>
+              <h4 class="item-title">Econometría <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong>, Báez Morales, A.</div>
+              <div class="item-cite">
+                <span>En <i>ABCD’Economía</i>, 2E. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Capítulo introductorio que detalla los supuestos clave del modelo lineal por Mínimos Cuadrados Ordinarios, estimación de parámetros e intervalos de confianza.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2023">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2023</span>
+              </div>
+              <h4 class="item-title">Problemas del Desarrollo en México, Tomo III <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors">Gómez-López, Claudia S., Gómez Z., M. de J., <strong>Alejandro Mosiño</strong> (Coordinadores)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Editorial Grañén Porrúa.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Tomo académico que analiza la política industrial, desarrollo rural y sustentabilidad de recursos naturales frente a los retos del siglo XXI.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2023">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2023</span>
+              </div>
+              <h4 class="item-title">Reflexiones sobre Economía y Ciencias Sociales: El caso de México <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors">Osorio-Caballero, M. I., <strong>Alejandro Mosiño</strong> (Coordinadores)</div>
+              <div class="item-cite">
+                <span>Universidad Nacional Autónoma de México – Universidad de Guanajuato.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Coedición institucional entre la UNAM y la UG para analizar temas contemporáneos de economía aplicada, crecimiento e institucionalidad.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2023">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2023</span>
+              </div>
+              <h4 class="item-title">ABCD’Economía (2E) <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong> (Coordinador)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Secularte A.C.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Segunda edición de este texto guía docente, ampliando ejercicios prácticos en R, álgebra lineal y econometría básica.</p>
+            </div>
+          </div>
+
+          <!-- ============ 2021 ============ -->
+          <div class="list-item book" data-year="2021">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2021</span>
+              </div>
+              <h4 class="item-title">ABCD’Economía, Tomo IV. Nuevos Talentos <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong>, Osorio-Caballero, M. I. (Coordinadores)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Secularte A.C.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Libro que recopila trabajos de investigación básica y aplicada de alumnos sobresalientes de la Licenciatura en Economía de la UG.</p>
+            </div>
+          </div>
+
+          <!-- ============ 2020 ============ -->
+          <div class="list-item bookchapter" data-year="2020">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2020</span>
+              </div>
+              <h4 class="item-title">Limpieza y análisis de bases de datos: un ejemplo introductorio <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong></div>
+              <div class="item-cite">
+                <span>En <i>ABCD’Economía, Tomo III</i>. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Guía de carácter metodológico y docente enfocada en instruir sobre la manipulación de variables, identificación de outliers y ordenación de datos brutos.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2020">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2020</span>
+              </div>
+              <h4 class="item-title">ABCD’Economía, Tomo III <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong> (Coordinador)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Secularte A.C.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Tomo docente con foco en estadística computacional y aplicaciones básicas con lenguaje R.</p>
+            </div>
+          </div>
+
+          <!-- ============ 2019 ============ -->
+          <div class="list-item bookchapter" data-year="2019">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2019</span>
+              </div>
+              <h4 class="item-title">Evaluación de políticas públicas: una introducción <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong>, A. Báez Morales</div>
+              <div class="item-cite">
+                <span>En <i>ABCD’Economía, Tomo II</i>. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Capítulo introductorio que sirve como material didáctico para comprender los diseños de evaluación cuasi-experimentales en programas gubernamentales.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2019">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2019</span>
+              </div>
+              <h4 class="item-title">Problemas del Desarrollo en México, Tomo II <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors">Gómez-López, Claudia S., Gómez Z., M. de J., <strong>Alejandro Mosiño</strong> (Coordinadores)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Editorial Grañén Porrúa.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Segundo volumen analizando las dinámicas de empleo informal, seguridad social y crecimiento sectorial en las regiones de México.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2019">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2019</span>
+              </div>
+              <h4 class="item-title">ABCD’Economía, Tomo II <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong> (Coordinador)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Secularte A.C.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Texto académico enfocado en microeconomía básica, elasticidades y teoría de la producción.</p>
+            </div>
+          </div>
+
+          <!-- ============ 2018 ============ -->
+          <div class="list-item bookchapter" data-year="2018">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2018</span>
+              </div>
+              <h4 class="item-title">Econometría <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong>, Báez Morales, A.</div>
+              <div class="item-cite">
+                <span>En <i>ABCD’Economía</i>. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Capítulo pedagógico que presenta un recorrido básico por la especificación de regresión lineal para alumnos de primer contacto con la materia.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2018">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2018</span>
+              </div>
+              <h4 class="item-title">ABCD’Economía <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors"><strong>Alejandro Mosiño</strong> (Coordinador)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Secularte A.C.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Volumen introductorio que agrupa los conceptos básicos e intuición económica para la formación de licenciaturas.</p>
+            </div>
+          </div>
+
+          <!-- ============ 2017 ============ -->
+          <div class="list-item bookchapter" data-year="2017">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--chapter">Capítulo Académico</span>
+                </div>
+                <span class="item-year">2017</span>
+              </div>
+              <h4 class="item-title">Aplicaciones y Extensiones de los Árboles Binomiales en Problemas de Opciones Reales <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors">S. Das Gupta, <strong>Alejandro Mosiño</strong></div>
+              <div class="item-cite">
+                <span>En <i>Tendencias en Ciencias Económico-Administrativas</i>. Universidad de Guanajuato – Secularte.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Capítulo pedagógico que introduce al alumno en el modelado por árboles binomiales (modelo de Cox-Ross-Rubinstein) aplicado a decisiones corporativas.</p>
+            </div>
+          </div>
+
+          <div class="list-item book" data-year="2017">
+            <div class="item-main">
+              <div class="item-header">
+                <div class="item-tags">
+                  <span class="item-tag item-tag--book">Libro Coordinado</span>
+                </div>
+                <span class="item-year">2017</span>
+              </div>
+              <h4 class="item-title">Problemas del Desarrollo en México <i class="bi bi-chevron-down item-toggle-icon"></i></h4>
+              <div class="item-authors">Gómez-López, Claudia S., Gómez Z., M. de J., <strong>Alejandro Mosiño</strong> (Coordinadores)</div>
+              <div class="item-cite">
+                <span>Universidad de Guanajuato – Editorial Grañén Porrúa.</span>
+              </div>
+            </div>
+            <div class="item-details">
+              <h5>Detalles</h5>
+              <p>Primer volumen colectivo que aborda las políticas de combate a la pobreza, migración regional y desarrollo industrial del clúster automotriz.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="investigacion.html">Investigación</a></li>
+        <li><a href="libros.html">Libros</a></li>
+        <li><a href="docencia.html">Docencia</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+      </ul>
+      <p>&copy; <span id="current-year"></span> Alejandro Mosiño. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+</html>

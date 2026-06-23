@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandro Mosiño | $title$</title>
+  <meta name="description" content="$if(excerpt)$$excerpt$$else$$title$$endif$">
+  <meta name="author" content="Alejandro Mosiño">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="logo-link">
+        <h2 class="logo-text">Alejandro <span>Mosiño</span></h2>
+      </a>
+      
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li><a href="../investigacion.html" class="nav-link">Investigación</a></li>
+          <li><a href="../libros.html" class="nav-link">Libros</a></li>
+          <li><a href="../docencia.html" class="nav-link">Docencia</a></li>
+          <li><a href="../proyectos.html" class="nav-link">Proyectos</a></li>
+          <li><a href="index.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    <article class="container">
+      
+      <!-- Post Header -->
+      <header class="post-header">
+        <div class="post-meta">
+          $for(categories)$
+          <span class="post-category">$categories$</span>
+          $endfor$
+          $if(categories)$<span>·</span>$endif$
+          <time datetime="$date$">$if(date_spanish)$$date_spanish$$else$$date$$endif$</time>
+        </div>
+        <h1 class="post-title">$title$</h1>
+        $if(tags)$
+        <div class="post-tags">
+          $for(tags)$
+          <span class="post-tag">$tags$</span>
+          $endfor$
+        </div>
+        $endif$$if(math)$
+        <!-- MathJax support -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        $endif$
+      </header>
+
+      <!-- Post Body -->
+      <section class="post-body">
+        $if(audio_enabled)$
+        <div class="audio-narration-player" id="narration-player" style="display: none;" $if(audio_file)$data-audio="$audio_file$"$endif$>
+          <div class="audio-player-main">
+            <button id="play-narration-btn" class="audio-play-btn" aria-label="Escuchar artículo">
+              <i class="bi bi-play-fill"></i>
+            </button>
+            <div class="audio-info">
+              <span class="audio-title">Escuchar este artículo</span>
+              <span class="audio-status" id="audio-status">Narración con voz</span>
+            </div>
+          </div>
+          <div class="audio-controls-right">
+            <button id="speed-btn" class="audio-speed-btn" title="Velocidad de reproducción">1.0x</button>
+            <div class="voice-wave" id="voice-wave">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        $endif$
+        $body$
+        $if(updated_spanish)$
+        <div class="post-updated">
+          <p><small><em>Última actualización: $updated_spanish$.</em></small></p>
+        </div>
+        $endif$
+      </section>
+
+      <!-- Post Footer / Navigation -->
+      <footer class="post-footer">
+        <a href="index.html" class="back-btn">
+          <i class="bi bi-arrow-left"></i> Volver al blog
+        </a>
+      </footer>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../investigacion.html">Investigación</a></li>
+        <li><a href="../libros.html">Libros</a></li>
+        <li><a href="../docencia.html">Docencia</a></li>
+        <li><a href="../proyectos.html">Proyectos</a></li>
+        <li><a href="index.html">Blog</a></li>
+      </ul>
+      <p>&copy; <span id="current-year"></span> Alejandro Mosiño. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>
