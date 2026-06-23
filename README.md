@@ -6,7 +6,7 @@
 ¡Bienvenido a mi sitio web personal y académico! Mi trabajo combina la investigación académica, la econometría aplicada y el análisis cuantitativo para el estudio de problemas económicos y sociales. Mis principales áreas de interés de investigación incluyen la salud, la educación, el desarrollo económico, la transición energética y la evaluación de políticas públicas.
 
 🔗 **Enlaces de Interés:**
-* [Sitio Web Académico (Público)](https://amosino.github.io/webpage-2026/)
+* [Sitio Web](https://amosino.net)
 * [Google Scholar](https://scholar.google.com/citations?user=MKNUvYIAAAAJ&hl=es)
 * [LinkedIn](https://www.linkedin.com/in/alejandro-mosino/)
 * [GitHub](https://github.com/amosino)
