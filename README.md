@@ -7,7 +7,7 @@
 
 🔗 **Enlaces de Interés:**
 * [Sitio Web Académico (Público)](https://amosino.github.io/webpage-2026/)
-* [Google Scholar](https://https://scholar.google.com/citations?user=MKNUvYIAAAAJ&hl=es)
+* [Google Scholar](https://scholar.google.com/citations?user=MKNUvYIAAAAJ&hl=es)
 * [LinkedIn](https://www.linkedin.com/in/alejandro-mosino/)
 * [GitHub](https://github.com/amosino)
 
