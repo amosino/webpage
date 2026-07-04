@@ -5,7 +5,7 @@ categories: ["Opinión"]
 tags: ["violencia", "política pública", "Guanajuato"]
 excerpt: "La violencia no solo cuesta vidas. También encarece los negocios, desalienta la inversión y deteriora la reputación de ciudades enteras."
 updated: today
-draft: true
+draft: false
 audio: false
 ---
 
